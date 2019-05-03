@@ -1,0 +1,50 @@
+@font-face{
+    font-family: "CaviarDreams";
+    src: url("../fonts/CaviarDreams.ttf") format("truetype");
+}
+
+#reserveForm
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#reserveForm div
+{
+    background-color: #292929;
+    color: white;
+}
+
+#reserveForm div div
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#reserveForm div div .modal-header
+{
+    font-family: "CaviarDreams", Geneva, sans-serif;
+    margin-top: 10px;
+}
+
+.form-group input
+{
+    color: #292929;
+}
+
+.modal-header button
+{
+   color: white;
+}
+
+.modal-body{
+    padding-bottom: 40px;
+}
+#submitBtn
+{
+   font-family: "CaviarDreams", Geneva, sans-serif; 
+   font-weight: bold;
+}
+
+.form-group{
+    margin: 30px;
+}

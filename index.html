@@ -1,0 +1,268 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <!--
+        Website: Ali's Grill CWEB195 Project
+        Author: Alexander Parcasio IV CST132
+                Brett Orban CST208 
+        -->
+        <!-- Title Tag -->
+        <title>Ali's Grill</title>
+        <!-- <<Mobile Viewport Code>> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- <<Attched Stylesheets>> -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        
+        <!-- CSS for Animations -->
+        <link href="css/specials.css" rel="stylesheet" type="text/css">
+        <!-- CSS for Base Styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- CSS for Video Player -->
+        <link href="css/video.css" rel="stylesheet" type="text/css">
+        <!-- CSS for FORM -->
+        <link href="css/form.css" rel="stylesheet" type="text/css">
+        
+        <!-- CSS for this page -->
+        <style>
+            .side-content{
+                width: 531px;
+                height: auto !important;
+                float: left;
+                margin-right: 10px;
+            }
+            .Section-Content section{
+                display: inline;
+            }
+            
+            .side-content2{
+                width: 19%;
+                margin: 20px;
+                float: left;
+                height: 150px;
+                display: block;
+                padding: 20px;
+            }
+            
+            @media(max-width:805px){
+                div.side-content{
+                    margin: auto;
+                    width: 80%;
+                    height: 80%;
+                    float: none;
+                    display: block;
+                }
+                
+                .side-content video{
+                    width: 100%;
+                    height: auto;
+                    margin: 0px;
+                    padding: 0px;
+                    margin-bottom: -5px;
+                }
+                
+                .side-content2{
+                    width: 80%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    float: none;
+                }
+            }
+        </style>
+    </head>
+<body class="">
+    <header>
+        <!-- Main Nav Section -->
+        <nav id="navigation">
+            <div>
+                <div id="burger">
+                    <span class="burger-top"></span>
+                    <span class="burger-meat"></span>
+                    <span class="burger-bottom"></span>
+                </div>
+                <div id="logo">
+                       <a href="index.html">Ali's Grill</a>
+                </div>
+
+                <ul>
+                    <li>
+                        <button type="button" class="btn button" data-toggle="modal" data-target="#reserveForm">Reserve Online</button>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="location.html">Location</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+					<li>
+						<a href=""></a>
+					</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Burger Nav -->
+        <div id="burgerNav" class="burgerNav">
+            <ul>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Form for Reserve Online -->
+    <div id="reserveForm" class="modal fade" role="dialog" style="display: none;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <form role="form">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">x</button>
+                        <h3 class="modal-title">Reserve Online</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" class="col-md-6" required=""><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="seats">Seats:</label><br>
+                            <input type="number" id="seats" min="0" max="20" value="1" step="1" class="col-md-2"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="card">Card:</label><br>
+                            <input class="col-md-6" id="card">
+                            <span class="col-md-1"></span>
+                            <input class="col-md-3" id="cvv" pattern="[0-9]{3}" placeholder="CVV" maxlength="3"><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="coupon">Coupon:</label><br>
+                            <input type="text" id="coupon" class="col-md-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="orders">Orders:</label><br>
+                            <button>add order</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="submitBtn" class="btn btn-default" data-dismiss="modal">Checkout</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Inner Content -->
+    <div class="Section-Top">
+        <h1>
+            WELCOME TO <br>
+            ALI'S GRILL RESTAURANT AND SPORTS BAR
+        </h1>
+        <h3>
+            102nd ST North Battleford
+        </h3>
+        <p>This is a sample Text. I couldn't think of anything to write in here. So enjoy  reading this nonsense.... If you're still reading this, seriously stop. This is embarrassing, just stop. Look at something else other than this article. So yeah! websites right? ok im done. See that period, that means im done.</p>
+        <button onclick="location.href='Menu.html'" id="Reserve" class="button" style="">
+            Explore Menu
+        </button>
+    </div>
+    <div id="slider">
+        <figure>
+            <img src="img/LocationImage.JPG" alt="">
+            <img src="img/LocationImage2.JPG" alt="">
+            <img src="img/LocationImage3.jpg" alt="">
+            <img src="img/LocationImage4.jpg" alt="">
+            <img src="img/LocationImage5.jpg" alt="">
+        </figure>
+    </div>
+    <div class="Section-Content">
+        <div class="side-content">
+            <video class="video-js vjs-default-skin" controls="" preload="none" muted=""><source src="vids/MVI_6849.MP4" type="video/mp4"></video>
+        </div>
+        <section>
+            <h3>Sample Article</h3>
+            <p>He said the restaurant was near Shanghai, but declined to give a precise location to protect other workers whom he said are still trying to flee. He declined to give the current location of the workers that have escaped.</p>
+
+            <p>Mr. Jang, the head of the New Focus International news agency and a former North Korean government official, said he received the information of the defection from someone who aided the workers’ escape. He said he expected the workers to arrive in South Korea in 10 to 15 days.</p>
+
+            <p>A spokesman for China’s Foreign Ministry said she had no information about the matter.</p>
+
+            <p>Another defection of a group of workers from North Korea’s network of some 130 restaurants in foreign countries would suggest continued weakness in Pyongyang’s control of the citizens it allows to work abroad.</p>
+
+            <p>Workers at restaurants are among some 50,000 North Koreans who human-rights groups estimate are based outside the country and forced to work long hours. Most of their income is sent back to the government in Pyongyang.</p>
+        </section>
+    </div>
+    <div class="Section-Content">
+        <div class="side-content2">
+            <h3>Sample Article</h3>
+        </div>
+        <div class="side-content2">
+            <h3>Sample Page</h3>
+        </div>
+        <div class="side-content2">
+            <h3>Sample Article</h3>
+        </div>
+        <div class="side-content2">
+            <h3>Sample Page</h3>
+        </div>
+    </div>
+        
+    <footer>
+        <ul>
+            <li><a href="#">F</a></li><!-- Facebook -->
+            <li><a href="#">L</a></li><!-- Twitter -->
+            <li><a href="#">E</a></li><!-- Behance -->
+            <li><a href="#">X</a></li><!-- Youtube -->
+            <li><a href="#">D</a></li><!-- Dribble -->
+			<li><a href="Jervin\index.html">J</a></li>
+			<li><a href="Alex\index.html">3</a></li>
+        </ul>
+        <br><br><br>
+        <a>JOIN THE ALI'S GRILL NEWSLETTER</a>
+        <ul>
+            <li>
+                <a href="#">OUR STORY</a>
+            </li>
+            <li>
+                <a href="#">BLOG</a>
+            </li>
+            <li>
+                <a href="#">FEEDBACK</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <li>
+                <a href="#">SUPPLIERS</a>
+            </li>
+            <li>
+                <a href="#">ACCESSIBILITY</a>
+            </li>
+            <li>
+                <a href="#">PRIVACY</a>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <p>© 2016. ALI'S GRILL. ALL RIGHTS RESERVED.</p>
+    </footer>
+    
+    <!-- Java Script -->
+    <script src="js/video.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body></html>
