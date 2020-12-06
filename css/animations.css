@@ -1,0 +1,55 @@
+/* @Author: Alexander Parcasio IV */
+/*Animation for Logo */
+#logo a:hover {
+   animation: hoverLogo 1.5s;
+   color: #de0000;
+}
+
+@keyframes hoverLogo {
+   from {
+      color: #b40000;
+   }
+
+   to {
+      color: #de0000;
+   }
+}
+
+/* Animation for Navigation*/
+   /* Animation for Burger */
+#burger:hover {
+   border-radius: 20%;
+   border: #DAA520 solid 2px;
+   cursor: pointer;
+   height: 40px;
+   width: 40px;
+   padding-top: 0px;
+   padding-left: 0px;
+}
+
+      /* Animation for Anchor <start> */
+#navigation li a:hover {
+   text-decoration: none;
+   animation: hoverLink 1.5s;
+   color: #DAA520;
+}
+
+.open ul li a:hover {
+   animation: hoverLink 1.5s;
+   color: #DAA520;
+}
+
+@keyframes hoverLink {
+   from {
+      color: white;
+   }
+
+   to {
+      color: #DAA520;
+   }
+}
+
+footer a:hover {
+   text-decoration: none;
+   color: #DAA520;
+}

@@ -1,325 +1,276 @@
-/*
- @author: Alexander Paracasio IV
- @version: 1.0
-  */
-/*======= Fonts ===========*/
+/* @Author: Alexander Paracasio IV */
+/* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic);
 
-@font-face{
-    font-family: "Alisandra";
-    src: url("../fonts/Alisandra.ttf") format("truetype"),
-         url("../fonts/Alisandra.eot"),
-         url('../fonts/Alisandra.eot?#iefix') format('embedded-opentype');
+@font-face {
+   font-family: "Alisandra";
+   src: url("../fonts/Alisandra.ttf") format("truetype"),
+      url("../fonts/Alisandra.eot"),
+      url('../fonts/Alisandra.eot?#iefix') format('embedded-opentype');
 }
 
-@font-face{
-    font-family: "CaviarDreams";
-    src: url("../fonts/CaviarDreams.ttf") format("truetype"),
-         url("../fonts/CaviarDreams.eot"),
-         url('../fonts/CaviarDreams.eot?#iefix') format('embedded-opentype');
+@font-face {
+   font-family: "CaviarDreams";
+   src: url("../fonts/CaviarDreams.ttf") format("truetype"),
+      url("../fonts/CaviarDreams.eot"),
+      url('../fonts/CaviarDreams.eot?#iefix') format('embedded-opentype');
 }
 
-@font-face{
-    font-family: "CaviarDreams Bold";
-    src: url("../fonts/Caviar_Dreams_Bold.ttf") format("truetype"),
-         url("../fonts/Caviar_Dreams_Bold.eot"),
-         url('../fonts/Caviar_Dreams_Bold.eot?#iefix') format('embedded-opentype');
+@font-face {
+   font-family: "CaviarDreams Bold";
+   src: url("../fonts/Caviar_Dreams_Bold.ttf") format("truetype"),
+      url("../fonts/Caviar_Dreams_Bold.eot"),
+      url('../fonts/Caviar_Dreams_Bold.eot?#iefix') format('embedded-opentype');
 }
 
-@font-face{
-    font-family: "Socialico";
-    src: url("../fonts/Socialico.ttf") format("truetype"),
-         url("../fonts/Socialico.eot"),
-        url('../fonts/Socialico.eot?#iefix') format('embedded-opentype');
+@font-face {
+   font-family: "Socialico";
+   src: url("../fonts/Socialico.ttf") format("truetype"),
+      url("../fonts/Socialico.eot"),
+      url('../fonts/Socialico.eot?#iefix') format('embedded-opentype');
 }
-/* =============================================================================
-  Base
-========================================================================== */
+
+/* Base */
 body {
-    font-family: "CaviarDreams Bold", "Open sans", sans-serif;
-    color: #606060;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+   font-family: "CaviarDreams Bold", "Open sans", sans-serif;
+   color: #606060;
+   font-size: 16px;
+   margin: 0px;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
-
 
 a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover, a:focus, a:active {
-  color: inherit;
+   color: inherit;
+   text-decoration: none;
 }
 
-button{
-    background-color: #292929;
-    border:1px 1px 1px 1px;
-    border-color: #DAA520;
-    font-size: 30px;
+a:hover,
+a:focus,
+a:active {
+   color: inherit;
 }
 
-video{
-    width: inherit;
-}
-/* Header 
-================================= */
-
-/* Logo 
-=================*/
-#logo a{
-    font-family: "Alisandra";
-    color:#b40000;
-    font-size: 45px;;
-    margin-left: 20px;
-    text-decoration: none;
-    float:left;
+button {
+   background-color: #292929;
+   border: 1px 1px 1px 1px;
+   border-color: #DAA520;
+   font-size: 30px;
 }
 
+video {
+   width: inherit;
+}
 
+/* Header */
+/* Logo */
+#logo a {
+   font-family: "Alisandra";
+   color: #b40000;
+   font-size: 45px;
+   margin-left: 20px;
+   text-decoration: none;
+   float: left;
+}
 
-/* Nav 
-=================*/
-
+/* Nav */
 /* Burger */
-#burger span{
-    -webkit-transition: -webkit-transform 200ms cubic-bezier(.63,.62,.48,1.64);
-    -moz-transition: -moz-transform 200ms cubic-bezier(.63,.62,.48,1.64);
-    -o-transition: -o-transform 200ms cubic-bezier(.63,.62,.48,1.64);
-    transition: transform 200ms cubic-bezier(.63,.62,.48,1.64);
-    background: #DAA520;
-    display: none;
-    width: 34px;
-    height: 2px;
+#burger span {
+   -webkit-transition: -webkit-transform 200ms cubic-bezier(.63, .62, .48, 1.64);
+   -moz-transition: -moz-transform 200ms cubic-bezier(.63, .62, .48, 1.64);
+   -o-transition: -o-transform 200ms cubic-bezier(.63, .62, .48, 1.64);
+   transition: transform 200ms cubic-bezier(.63, .62, .48, 1.64);
+   background: #DAA520;
+   display: none;
+   width: 34px;
+   height: 2px;
 }
 
-#burger{
-        position: absolute;
-        left:15px;
-        top:40px;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-    }
+#burger {
+   position: absolute;
+   left: 15px;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
 /* Burger Nav */
-
-.burgerNav{
-    display: none;
-    background-color: #292929;
-    color: white;
-    margin: 0px;
-    padding-top: 40px;
-    position: fixed;
-    top: 70px;
-    text-decoration: none;
-    z-index: 999;
+.burgerNav {
+   display: none;
+   background-color: #292929;
+   color: white;
+   margin: 0px;
+   padding-top: 40px;
+   position: fixed;
+   top: 70px;
+   text-decoration: none;
 }
 
-.open,.open ul{
-    padding-left: 5px;
-    display: block;
-    list-style: none;
+.open,
+.open ul {
+   padding-left: 5px;
+   display: block;
+   list-style: none;
 }
 
-.open ul li a{
-    display:block;
-    margin:20px;
-    font-family: 'CaviarDreams';
-    text-decoration: none;
-    
+.open ul li a {
+   display: block;
+   margin: 20px;
+   font-family: 'CaviarDreams';
+   text-decoration: none;
+
 }
+
 /* Desktop Nav */
-#navigation{
-    position: fixed;
-    padding-top: 20px;
-    width: 100%;
-    height: 100px;
-    z-index: 9999;
+#navigation {
+   position: fixed;
+   width: 100%;
+   height: 100px;
 }
 
-#navigation, #navigation li{
-    display: inline-block;
-    font-size: 25px;
-    list-style: none;
-    color: white;
-    background-color: #292929;
-
+#navigation,
+#navigation li {
+   display: inline-block;
+   font-size: 25px;
+   list-style: none;
+   color: white;
+   background-color: #292929;
+   font-family: "CaviarDreams";
+   float: right;
 }
 
-#navigation li{
-    font-family: "CaviarDreams";
-    display: block;
-    float:right;
-    margin-top:10px;
+#navigation li a {
+   margin-right: 15px;
 }
 
-#navigation li a{
-    margin-right: 15px;
+/* Body */
+.side-content {
+   display: block;
+   box-shadow: 0px 0px 5px 1px;
 }
 
-#navigation button{
-    font-family: "CaviarDreams";
-    font-weight: Bold;
-    color:white;
-    background-color: #292929;
-    font-size: 26px;
-    border:none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-/* Body
-================================= */
-.side-content{
-    display: block;
-    box-shadow: 0px 0px 5px 1px;
+.side-content2 {
+   display: block;
+   background-color: #292929;
+   box-shadow: 0px 0px 5px 1px;
 }
 
-.side-content2{
-    display: block;
-    background-color: #292929;
-    box-shadow: 0px 0px 5px 1px;
+.Section-Top {
+   background-color: #292929;
+   box-shadow: 0px 2px 10px;
+   color: #dddddd;
+   font-family: "CaviarDreams Bold";
+   padding-top: 100px;
 }
 
-.Section-Top{
-    margin-top: -10px;
-    padding: 100px 40px 40px 40px;
-    background-color: #292929;
-    color: #dddddd;
-    font-family: "CaviarDreams Bold";
-    box-shadow: 0px 2px 10px;
-    width: 100%;
+.Section-Content {
+   clear: left;
+   margin: 15px;
+   display: inline-block;
+   width: 100%;
 }
 
-.Section-Content{
-    margin-top: -10px;
-    padding: 30px;
-    width: 100%;
+/* Footer */
+footer {
+   margin-top: 100px;
+   width: 100%;
+   display: block;
+   clear: left;
+   padding: 50px;
+   box-shadow: 0px -5px 30px;
+   font-family: "CaviarDreams Bold";
+   background-color: #292929;
 }
 
-.imageFull img{
-    width: 100% !important;
-}
-/* Footer 
-================================= */
-footer{
-    margin-top: 100px;
-    width: 100%;
-    display: block;
-    clear: left;
-    padding: 50px;
-    box-shadow: 0px -5px 30px;
-    font-family: "CaviarDreams Bold";
-    background-color: #292929;
+footer a {
+   text-decoration: none;
+   -webkit-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+   cursor: pointer;
 }
 
-footer a{
-    text-decoration: none;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    cursor: pointer;
+footer ul {
+   padding-left: 0px;
+   padding-top: 15px;
 }
 
-footer ul{
-    padding-left: 0px;
-    padding-top: 15px;
-}
-footer ul:first-of-type li a{
-    font-size: 40px;
-    font-family: "Socialico";
+footer ul li {
+   list-style: none;
+   display: block;
+   float: left;
+   margin-right: 20px;
 }
 
-footer ul li{
-    list-style: none;
-    display: block;
-    float: left;
-    margin-right: 20px;
+footer p {
+   padding-top: 20px;
+   font-size: 14px;
+   color: #7b7b7b;
 }
 
-footer p{
-    padding-top: 20px;
-    font-size: 14px;
-    color: #7b7b7b;
-}
 /* Display Transitions */
-@media (min-width:1025px){
-    #navigation ul li a{
-        font-size: 25px;    
-    }
-    .open{
-        display: none;
-    }
+@media (min-width:1025px) {
+   #navigation ul li a {
+      font-size: 25px;
+   }
+
+   .open {
+      display: none;
+   }
 }
 
-@media (max-width: 1024px){
-    #navigation ul li a, #button{
-        font-size: 22px;
-    }
-    .open{
-        display: none;
-    }
+@media (max-width: 1024px) {
+
+   #navigation ul li a,
+   #button {
+      font-size: 22px;
+   }
+
+   .open {
+      display: none;
+   }
 }
 
-@media (max-width:805px){
-    .Section-Top{
-        text-align: center;
-    }
-    #navigation ul li a{
-        display: none;
-    }
-    
-    .open{
-        display: block;
-    }
-    
-    #burger span{
-        margin-top: 8px;
-        display: block;
-    }
-    
-    #logo a{
-        margin-left: 60px;
-    }
+@media (max-width:805px) {
+   .Section-Top h1{
+      text-align: center;
+   }
+
+   #navigation ul li a {
+      display: none;
+   }
+
+   .open {
+      display: block;
+   }
+
+   #burger span {
+      margin-top: 8px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+
+   #logo a {
+      display: block;
+      float: right;
+      margin-right: 5%;
+   }
 }
 
-@media (max-width: 500px){
-    #navigation{
-        height: 12%;
-    }
-    
-    .Section-Top{
-        padding-top: 120px;
-    }
-    #navigation li button{
-        font-size: 18px;
-        display: block;
-        margin-top: -5px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-    }
-    
-    .burgerNav{
-        top: 55px;
-    }
-    
-    #burger span{
-        width: 22px;
-        margin-left: 4px;
-    }
-    
-    #burger{
-        margin-top: -6px;
-    }
-    
-    #logo a{
-        margin-top: 10px;
-        font-size: 22px;
-        display: block;
-    }
-}
+@media (max-width: 500px) {
+   #navigation {
+      height: 70px;
+   }
 
-@media (max-width: 310px){
-    #navigation li button,#logo a{
-        float: right;
-        margin-right: 20px;
-    }
-}
+   .burgerNav {
+      top: 55px;
+   }
 
+   #burger {
+      margin-top: -6px;
+   }
+
+   #logo a {
+      font-size: 22px;
+   }
+
+}

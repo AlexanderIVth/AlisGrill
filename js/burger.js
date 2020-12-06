@@ -1,3 +1,4 @@
+//@Author: Alexander Parcasio IV
 'use strict';
 
 (function() {
